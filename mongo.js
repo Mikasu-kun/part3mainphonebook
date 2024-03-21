@@ -9,9 +9,7 @@ const password = process.argv[2]
 const url = `mongodb+srv://mikasu:Bebra1945@cluster0.rbfc2gs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 
 mongoose.set('strictQuery', false)
-mongoose
-  .connect(url, { dbName: 'phonebook' })
-  .then(console.log('Connected to DB'))
+mongoose.connect(url, { useNewUrlParser: true })
 
 const personSchema = new mongoose.Schema({
   name: String,
