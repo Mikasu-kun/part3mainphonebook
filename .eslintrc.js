@@ -1,32 +1,43 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+  'env': {
+    'node': true,
+    'commonjs': true,
+    'es2021': true
+  },
+  'extends': 'eslint:recommended',
+  'overrides': [
+
+  ],
+  'parserOptions': {
+    'ecmaVersion': 'latest'
+  },
+  'rules': {
+    'indent': [
+      'error',
+      2
     ],
-    "overrides": [
-        {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
+    'linebreak-style': [
+      'error',
+      'windows'
     ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
+    'quotes': [
+      'error',
+      'single'
     ],
-    "rules": {
-    }
+    'semi': [
+      'error',
+      'never'
+    ],
+    'eqeqeq': 'error',
+    'no-trailing-spaces': 'error',
+    'object-curly-spacing': [
+      'error', 'always'
+    ],
+    'arrow-spacing': [
+      'error', {
+        'before': true, 'after': true
+      }
+    ],
+    'no-console': 0
+  }
 }
