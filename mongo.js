@@ -6,7 +6,7 @@ if (process.argv.length < 3) {
 }
 
 const password = process.argv[2]
-const url = `mongodb+srv://ghoulgager:${password}@cluster0.bnpmn3c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+const url = `mongodb+srv://mikasu:${password}@phonebook.vxe373n.mongodb.net/?retryWrites=true&w=majority&appName=phonebook`
 
 mongoose.set('strictQuery', false)
 mongoose
