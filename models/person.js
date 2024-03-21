@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 mongoose.set('strictQuery', false)
 
-const url = 'mongodb+srv://mikasu:Bebra1945@cluster0.rbfc2gs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const url = process.env.MONGODB_URI
 
 mongoose.connect(url, { useNewUrlParser: true })
     .then(() => {
